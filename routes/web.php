@@ -10,17 +10,21 @@ Route::get('/media', [\App\Http\Controllers\Frontend\GalleryController::class, '
 Route::get('/donation', [\App\Http\Controllers\Frontend\DonationController::class, 'index'])->name('donation');
 Route::get('/contact', [\App\Http\Controllers\Frontend\ContactController::class, 'index'])->name('contact');
 Route::get('/blood', [\App\Http\Controllers\Frontend\BloodBankController::class, 'index'])->name('blood');
+Route::get('/get-districts', [\App\Http\Controllers\Frontend\BloodBankController::class, 'getDistricts']);
+Route::get('/get-thanas', [\App\Http\Controllers\Frontend\BloodBankController::class, 'getThanas']);
 
 Route::get('/blood/management', [\App\Http\Controllers\Frontend\BloodBankController::class, 'management'])->name('blood.management');
 
-Route::get('/member/login', [\App\Http\Controllers\Member\LoginController::class, 'login'])->name('member.login');
-Route::get('/member/registration', [\App\Http\Controllers\Member\LoginController::class, 'registration'])->name('member.registration');
-
+Route::match(['get','post'],'/member/login', [\App\Http\Controllers\Member\LoginController::class, 'login'])->name('member.login');
+Route::match(['get','post'],'/member/registration', [\App\Http\Controllers\Member\LoginController::class, 'registration'])->name('member.registration');
 
 Route::middleware('member')->group(function () {
-  
-
-});
+    Route::get('/member/blood', [\App\Http\Controllers\Member\BloodManagementController::class, 'index'])->name('member.blood');
+    Route::post('/member/donate/blood', [\App\Http\Controllers\Member\BloodManagementController::class, 'addOrUpdateInfo'])->name('member.donate.blood');
+    Route::get('/member/dashboard', [\App\Http\Controllers\Member\MemberController::class, 'index'])->name('member.dashboard');
+   
+    Route::get('/logout',[App\Http\Controllers\Member\MemberController::class,'logout'])->name('logout');
+});  
 
 
 

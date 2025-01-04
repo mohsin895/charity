@@ -32,21 +32,18 @@
                 Already have an account ? <a href="{{route('member.login')}}">Login Here</a>
               </p>
               <!-- Form -->
-              <form class="form" method="post" action="#">
+              <form class="form" method="post" action="{{route('member.registration')}}">
+                @csrf
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-lg-12">
                     <div class="form-group">
                       <input type="text" name="name" placeholder="First Name" required="">
                     </div>
                   </div>
+                  
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <input type="text" name="name" placeholder="Last Name" required="">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="email" name="email" placeholder="Phone" required="">
+                      <input type="text" name="phone" placeholder="Phone" required="">
                     </div>
                   </div>
                   <div class="col-lg-6">

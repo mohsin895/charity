@@ -46,28 +46,13 @@
                             <nav class="navigation">
                                 <ul class="nav menu">
                                     <li class="{{ Request::routeIs('index') ? 'active' : '' }}">
-                                        <a href="{{ route('index') }}" style="text-decoration: none">প্রচ্ছদ</a>
+                                        <a href="{{ route('index') }}" style="text-decoration: none">Blood Donation</a>
                                     </li>
                                     <li class="{{ Request::routeIs('about.us') ? 'active' : '' }}" >
-                                        <a href="{{ route('about.us') }}" style="text-decoration: none">আমাদের সম্পর্কে</a>
+                                        <a href="{{ route('about.us') }}" style="text-decoration: none">Logout</a>
                                     </li>
                             
-                                    <li class="{{ Request::routeIs('activity') ? 'active' : '' }}" >
-                                        <a href="{{ route('activity') }}" style="text-decoration: none">কার্যক্রম  </a>
-                                    </li>
-                                    <li class="{{ Request::routeIs('blood') ? 'active' : '' }}"><a href="{{ route('blood') }}" style="text-decoration: none">রক্তদান   </a></li>
-                                    <li class="{{ Request::routeIs('project') ? 'active' : '' }}">
-                                        <a href="{{ route('project') }}" style="text-decoration: none">প্রকল্প   </a>
-                                    </li>
-                                    <li class="{{ Request::routeIs('donation') ? 'active' : '' }}">
-                                        <a href="{{ route('donation') }}" style="text-decoration: none">অনুদান   </a>
-                                    </li>
-                                    <li class="{{ Request::routeIs('media') ? 'active' : '' }}">
-                                        <a href="{{ route('media') }}" style="text-decoration: none">মিডিয়া    </a>
-                                    </li>
-                                    <li><a href="#" style="text-decoration: none">গুরুত্বপূর্ণ তথ্যবলি   </a></li>
-                                    <li class="{{ Request::routeIs('contact') ? 'active' : '' }}"><a href="{{ route('contact') }}" style="text-decoration: none">যোগাযোগ </a></li>
-                                </ul>
+                                    
                             </nav>
                         </div>
                         <!--/ End Main Menu -->

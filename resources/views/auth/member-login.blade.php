@@ -33,28 +33,21 @@
                 <a href="{{route('member.registration')}}">Register Here</a>
               </p>
               <!-- Form -->
-              <form class="form" method="post" action="#">
+              <form class="form" method="post" action="{{ route('member.login') }}">
+                @csrf
                 <div class="row">
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="text" name="name" placeholder="First Name">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
+                  
+                  <div class="col-lg-12">
                     <div class="form-group">
                       <input type="email" name="email" placeholder="Your Email">
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-12">
                     <div class="form-group">
                       <input type="password" name="password" placeholder="Password">
                     </div>
                   </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="password" name="password" placeholder="Confirm Password">
-                    </div>
-                  </div>
+                  
                   <div class="col-12">
                     <div class="form-group login-btn">
                       <button class="btn" type="submit">Login</button>

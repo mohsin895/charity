@@ -17,7 +17,9 @@ return new class extends Migration
             $table->integer('member_type')->nullable();
             $table->string('phone')->nullable();
             $table->string('em_phone')->nullable();
-            $table->string('email')->nullable();
+            $table->string('email')->unique();
+            $table->string('password')->nullable();
+            $table->string('remember_token')->nullable();
             $table->string('fbLink')->nullable();
             $table->string('nid')->nullable();
             $table->string('education')->nullable();
@@ -26,6 +28,8 @@ return new class extends Migration
             $table->string('skill')->nullable();
             $table->string('address')->nullable();
             $table->string('pAddress')->nullable();
+            $table->enum('is_verify',[1,2])->default(2)->comment('1=verify,2=not verify');
+            $table->enum('status',[1,2,3])->default(2)->comment('active=1,inactive=2,block=3');
             $table->timestamps();
         });
     }

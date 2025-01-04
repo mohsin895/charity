@@ -1,6 +1,7 @@
 @extends('layouts.frontend.master')
 
 @section('content')
+
 <section class="slider">
     <div class="hero-slider">
         <!-- Start Single Slider -->

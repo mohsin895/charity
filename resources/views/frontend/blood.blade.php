@@ -68,8 +68,8 @@
                        aria-controls="about-us" aria-selected="true">রক্ত প্রয়োজন</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " id="our-mission-tab" data-toggle="tab" href="#our-mission" role="tab"
-                       aria-controls="our-mission" aria-selected="false">রক্তদানের পাতা</a>
+                    <a class="nav-link " id="blood-list-tab" data-toggle="tab" href="#blood-list" role="tab"
+                       aria-controls="blood-list" aria-selected="false">রক্তদানের পাতা</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " id="about-us-tab" data-toggle="tab" href="#our-history" role="tab"
@@ -100,11 +100,105 @@
                         {!! $setting->blood_hsitory !!}
                     </p>
                 </div>
-                <div class="tab-pane fade" id="about-aim" role="tabpanel" aria-labelledby="about-aim-tab">
+                <div class="tab-pane fade" id="blood-list" role="tabpanel" aria-labelledby="list-tab">
                     <h3>আমাদের লক্ষ্য ও উদ্দেশ্য</h3>
-                    <p>
-                        আমাদের লক্ষ্য হল গুণগত মান বজায় রেখে সমাজের সেবা করা। আমরা দীর্ঘমেয়াদী উন্নয়ন পরিকল্পনা গ্রহণ করি।
-                    </p>
+                    <section class="services section">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <div class="single-service">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                             
+                                        <section class="why-choose section">
+                                            
+                                              <div class="row">
+                                                <div class="col-lg-6">
+                                                 <img src="http://127.0.0.1:8000/uploads/images/setting/logo_676f778406ebd.png" />
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                               
+                                                <div class="col-lg-12 col-12">
+                                                  <!-- Start Choose Rights -->
+                                                  <div class="choose-right">
+                                                    <div class="video-image">
+                                                     
+                                                      <!--/ End Video Animation -->
+                                                      <a href="#" class="video video-popup mfp-iframe"><span>A+</span></a>
+                                                    </div>
+                                                  </div>
+                                                  <!-- End Choose Rights -->
+                                                </div>
+                                              </div>
+                                            
+                                          </section>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                <h4><a href="service-details.html">General Treatment</a>
+                                    
+                                </h4>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                  luctus dictum eros ut imperdiet.
+                                </p>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <div class="single-service">
+                                <i class="icofont icofont-tooth"></i>
+                                <h4><a href="service-details.html">Teeth Whitening</a></h4>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                  luctus dictum eros ut imperdiet.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <div class="single-service">
+                                <i class="icofont icofont-heart-alt"></i>
+                                <h4><a href="service-details.html">Heart Surgery</a></h4>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                  luctus dictum eros ut imperdiet.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <div class="single-service">
+                                <i class="icofont icofont-listening"></i>
+                                <h4><a href="service-details.html">Ear Treatment</a></h4>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                  luctus dictum eros ut imperdiet.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <div class="single-service">
+                                <i class="icofont icofont-eye-alt"></i>
+                                <h4><a href="service-details.html">Vision Problems</a></h4>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                  luctus dictum eros ut imperdiet.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <div class="single-service">
+                                <i class="icofont icofont-blood"></i>
+                                <h4><a href="service-details.html">Blood Transfusion</a></h4>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                  luctus dictum eros ut imperdiet.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
                 </div>
                 <div class="tab-pane fade" id="about-vision" role="tabpanel" aria-labelledby="about-vision-tab">
                     <h3>আমাদের ভবিষ্যত দৃষ্টি</h3>
